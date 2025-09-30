@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#main-navbar {
+  background-color: #333;
+  color: #FFF;
+  padding: .5rem 1rem;
+}
+
+#main-navbar a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#main-navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.album {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.album-info {
+  width: 12rem;
+}
+
+.album-info img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.album-content {
+  flex: 1 1 auto;
+}
+
+.album-track-list {
+  padding: 0;
+  list-style: none;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.album-track {
+  padding: .25rem .5rem;
+}
+
+.album-track:nth-child(even) {
+  background-color: #EEE;
+}
+
+.album-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.album-title>small {
+  color: #555;
+}
+
+.album-actions button {
+  background-color: coral !important;
+  color: white;
+  border-radius: .5rem;
+  border: 0;
+}
