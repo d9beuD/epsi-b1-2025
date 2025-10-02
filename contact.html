@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/form.css">
 </head>
+
 <body>
-  <nav>
+  <nav id="main-navbar">
+    <div class="container">
       <ul>
         <li>
-          <a href="/index.html">Accueil</a>
+          <span class="nav-link nav-brand">Dr. Peacock</span>
         </li>
         <li>
-          <a href="/musiques.html">Musiques</a>
+          <a class="nav-link" href="/index.html">Accueil</a>
         </li>
         <li>
-          <a href="/contact.html">Contact</a>
+          <a class="nav-link" href="/albums.html">Albums</a>
+        </li>
+        <li>
+          <a class="nav-link" href="/contact.html">Contact</a>
         </li>
       </ul>
-    </nav>
+    </div>
+  </nav>
 
+  <div class="container">
     <h1>Contact</h1>
 
-    <form action="" method="post">
-      <div>
-        <label for="email">Adresse email</label>
+    <form class="form" action="" method="post">
+      <div class="form-group">
+        <label for="email">Adresse email :</label>
         <input type="email" name="email" id="email">
       </div>
 
-      <div>
-        <label for="subject">Objet</label>
+      <div class="form-group">
+        <label for="subject">Object :</label>
         <input type="text" name="subject" id="subject">
       </div>
 
-      <div>
-        <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
+      <div class="form-group">
+        <label for="content">Votre message :</label>
+        <textarea name="content" id="content" rows="6"></textarea>
       </div>
 
-      <input type="submit" value="Envoyer">
+      <div class="form-actions">
+        <button class="btn" type="submit">Envoyer</button>
+      </div>
     </form>
+  </div>
 </body>
+
 </html>
