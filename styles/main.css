@@ -29,6 +29,7 @@ body {
 
 .container {
   padding-inline: 1rem;
+  margin-inline: auto;
 }
 
 /* Navbar */
@@ -76,4 +77,29 @@ body {
   background-color: var(--primary);
   color: var(--primary-foreground);
   font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
 }
